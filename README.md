@@ -14,11 +14,11 @@
 2. Lecture 2: 生物信息学资源
 3. Lecture 3: 基础BLAST分析实例
 4. Lecture 4: 宏基因组分析概况及序列组装
-5. Lecture 5:
-6. Lecture 6:
-7. Lecture 7:
-8. Lecture 8:
-9. Lecture 9:
+5. Lecture 5: 宏基因组分析设计及组装(1)
+6. Lecture 6: 宏基因组分析设计及组装(2)
+7. Lecture 7: 宏基因组分箱分析及实操
+8. Lecture 8: 封箱、基因组质量检测及进化树的构建
+9. Lecture 9: 宏基因组丰度计算、功能注释及转录组分析基础
 
 ## 📅 Requirements
 
