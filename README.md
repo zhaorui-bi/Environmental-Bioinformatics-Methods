@@ -10,10 +10,15 @@
 
 ## 💾 Lectures
 
-1. Lecture 1:
+1. Lecture 1: 环境生物信息学-生物学基础
 2. Lecture 2:
 3. Lecture 3:
-4. 
+4. Lecture 4:
+5. Lecture 5:
+6. Lecture 6:
+7. Lecture 7:
+8. Lecture 8:
+9. Lecture 9:
 
 ## 📅 Requirements
 
