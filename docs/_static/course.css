@@ -1,0 +1,19 @@
+:root {
+  --pst-color-primary: #0a4f6b;
+  --pst-color-secondary: #178f8f;
+  --pst-color-accent: #c67d28;
+  --pst-font-family-base: "Source Sans 3", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --pst-font-family-heading: "IBM Plex Sans", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 980px;
+}
+
+h1, h2, h3 {
+  letter-spacing: 0.01em;
+}
+
+.admonition.note {
+  border-left: 0.28rem solid var(--pst-color-secondary);
+}

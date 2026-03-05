@@ -1,14 +1,29 @@
-# PKU EMBL | Environmental-Bioinformatics-Methods
+# PKU EMBL | Environmental Bioinformatics Methods
 
-## 📣 News
+A CS224n-style course repository for environmental bioinformatics: clear schedule, structured assignments, milestone-based project workflow, and a standalone course website on Read the Docs.
 
-- **[2025/12/29]**: 🤗 We release **Course Environmental Bioinformatics Methods Community**.
+## Course Hub
 
-## 💻 How to define a perfect bioinformatics tool?
+- Course docs (Read the Docs): <https://environmental-bioinformatics-methods.readthedocs.io/>
+- Course syllabus: [docs/syllabus.md](docs/syllabus.md)
+- Weekly schedule: [docs/schedule.md](docs/schedule.md)
+- Assignments: [assignments/README.md](assignments/README.md)
+- Final project: [project/README.md](project/README.md)
 
-- Please see [TOOL](TOOL.md) for details.
+## Repository Structure
 
-## 💾 Lectures
+```text
+.
+├── assignments/          # Homework specs, grading rubric, submission templates
+├── docs/                 # Sphinx + MyST source for Read the Docs site
+├── lecture/              # Lecture slides (PDF)
+├── project/              # Final project track and templates
+├── LICENSE
+├── README.md
+└── TOOL.md               # Suggested standards for bioinformatics tools
+```
+
+## Lectures
 
 1. Lecture 1: [生物学基础](lecture/第一讲_生物学基础.pdf)
 2. Lecture 2: [生物信息学资源](lecture/第二讲_生物信息学资源.pdf)
@@ -21,17 +36,25 @@
 9. Lecture 9: [宏基因组丰度计算、功能注释及转录组分析基础](lecture/第九讲_宏基因组丰度计算、功能注释及转录组分析基础.pdf)
 10. Lecture 10: [生态学理论及初步扩增子分析](lecture/第十讲_生态学理论及初步扩增子分析.pdf)
 
-## 📅 Requirements
+## Build Docs Locally
 
-## 📖 Students Group Projects
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r docs/requirements.txt
+sphinx-build -b html docs docs/_build/html
+```
 
-> Group ID: Projects Topic: Related GitHub link with detailed README files —— Team numbers
+Open `docs/_build/html/index.html` in browser after build succeeds.
 
-## 🔒 License
+## Deploy to Read the Docs
 
-- See [LICENSE](LICENSE) for details.
+1. Push this repository to GitHub.
+2. Import the repository at <https://app.readthedocs.org/>.
+3. Read the Docs will auto-detect `.readthedocs.yaml` and build the docs.
+4. Optional: set custom domain in RTD project settings.
 
-## ✒️ Citation
+## Citation
 
 ```bibtex
 @misc{PKU-EMBL_EnvBioinfoMethods,
@@ -41,6 +64,6 @@
   publisher    = {GitHub},
   journal      = {GitHub repository},
   howpublished = {\url{https://github.com/PKU-EMBL/Environmental-Bioinformatics-Methods}},
-  note         = {Accessed: 2026-03-03}
+  note         = {Accessed: 2026-03-05}
 }
 ```
