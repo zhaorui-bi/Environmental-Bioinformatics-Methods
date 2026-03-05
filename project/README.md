@@ -1,16 +1,15 @@
-# Final Project Guide
+# 课程项目指南 | Final Project Guide
 
-## Scope
+## 项目范围
 
-Choose one environmental bioinformatics question and complete an end-to-end reproducible analysis.
+围绕一个环境生物信息学问题，完成可复现的端到端分析。
 
-## Suggested Timeline
+## 对应课程节点
 
-1. Week 4: Proposal
-2. Week 7: Midterm checkpoint
-3. Week 10: Final report + presentation + repository
+1. 第 15 讲：提交项目设计书（Proposal）
+2. 第 16 讲：小组终期汇报与答辩
 
-## Repository Standard
+## 仓库结构建议
 
 ```text
 project-team-name/
@@ -22,8 +21,8 @@ project-team-name/
 └── report/
 ```
 
-## Minimum Quality Bar
+## 最低质量要求
 
-- Deterministic rerun of key results
-- Clear biological question and justified method choice
-- Honest limitation analysis
+- 核心结果可复现
+- 方法和参数选择有明确解释
+- 报告包含局限性与改进方向

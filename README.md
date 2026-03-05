@@ -1,42 +1,64 @@
-# PKU EMBL | Environmental Bioinformatics Methods
+# 环境生物信息学方法 | Methodologies of Environmental Bioinformatics
 
-A CS224n-style course repository for environmental bioinformatics: clear schedule, structured assignments, milestone-based project workflow, and a standalone course website on Read the Docs.
+面向研究生的环境生物信息学课程仓库与文档网站。  
+A graduate-level course repository and documentation site for environmental bioinformatics.
 
-## Course Hub
+## 课程基本信息 | Course Information
 
-- Course docs (Read the Docs): <https://environmental-bioinformatics-methods.readthedocs.io/>
-- Course syllabus: [docs/syllabus.md](docs/syllabus.md)
-- Weekly schedule: [docs/schedule.md](docs/schedule.md)
-- Assignments: [assignments/README.md](assignments/README.md)
-- Final project: [project/README.md](project/README.md)
+- 修读对象：硕士/博士研究生。  
+  Target students: Master's and PhD students.
+- 任课教师：余珂。  
+  Instructor: Ke Yu.
+- 总学时：48 学时（16 讲 x 3 学时）。  
+  Contact hours: 48 hours (16 lectures x 3 hours).
+- 课程网站（Read the Docs）：<https://environmental-bioinformatics-methods.readthedocs.io/>  
+  Course website (Read the Docs): <https://environmental-bioinformatics-methods.readthedocs.io/>
 
-## Repository Structure
+## 课程入口 | Course Navigation
+
+- 课程大纲：`docs/syllabus.md`  
+  Syllabus: `docs/syllabus.md`
+- 教学进度：`docs/schedule.md`  
+  Schedule: `docs/schedule.md`
+- 作业与案例：`docs/assignments.md`  
+  Assignments and case studies: `docs/assignments.md`
+- 课程项目：`docs/project.md`  
+  Final project: `docs/project.md`
+- 课程要求与规范：`docs/policies.md`  
+  Policies: `docs/policies.md`
+
+## 课程考核 | Assessment
+
+- 平时作业与上机练习：25%。  
+  Regular homework and lab practice: 25%.
+- 研究案例 I/II/III：30%。  
+  Case studies I/II/III: 30%.
+- 课程项目设计（第 15 讲）：10%。  
+  Project proposal/design (Lecture 15): 10%.
+- 期末小组报告（第 16 讲）：25%。  
+  Final team report and presentation (Lecture 16): 25%.
+- 课堂参与与出勤：10%。  
+  Class participation and attendance: 10%.
+
+## 参考书 | References
+
+1. Rodriguez-Ezpeleta, Hackenberg, and Aransay. *Bioinformatics of High Throughput Sequencing*. 978-1-4614-0781-2, 2012.
+2. Hodgman, French, and Westhead. *Bioinformatics*.
+
+## 仓库结构 | Repository Structure
 
 ```text
 .
-├── assignments/          # Homework specs, grading rubric, submission templates
-├── docs/                 # Sphinx + MyST source for Read the Docs site
-├── lecture/              # Lecture slides (PDF)
-├── project/              # Final project track and templates
+├── assignments/          # 作业与案例模板 / Assignment and case templates
+├── docs/                 # Sphinx + MyST 文档源文件 / Sphinx + MyST docs source
+├── lecture/              # 课程讲义 PDF / Lecture slides (PDF)
+├── project/              # 课程项目模板 / Final project templates
 ├── LICENSE
 ├── README.md
-└── TOOL.md               # Suggested standards for bioinformatics tools
+└── TOOL.md               # 生信工具开发建议 / Bioinformatics tool-quality guidance
 ```
 
-## Lectures
-
-1. Lecture 1: [生物学基础](lecture/第一讲_生物学基础.pdf)
-2. Lecture 2: [生物信息学资源](lecture/第二讲_生物信息学资源.pdf)
-3. Lecture 3: [基础BLAST分析实例](lecture/第三讲_基础BLAST分析实例.pdf)
-4. Lecture 4: [宏基因组分析概况及序列组装](lecture/第四讲_宏基因组分析概况及序列组装.pdf)
-5. Lecture 5: [宏基因组分析设计及组装(1)](lecture/第五-六讲_宏基因组分析设计及组装.pdf)
-6. Lecture 6: [宏基因组分析设计及组装(2)](lecture/第五-六讲_宏基因组分析设计及组装.pdf)
-7. Lecture 7: [宏基因组分箱分析及实操](lecture/第七讲_宏基因组分箱分析及实操.pdf)
-8. Lecture 8: [封箱、基因组质量检测及进化树的构建](lecture/第八讲_封箱、基因组质量检测及进化树的构建.pdf)
-9. Lecture 9: [宏基因组丰度计算、功能注释及转录组分析基础](lecture/第九讲_宏基因组丰度计算、功能注释及转录组分析基础.pdf)
-10. Lecture 10: [生态学理论及初步扩增子分析](lecture/第十讲_生态学理论及初步扩增子分析.pdf)
-
-## Build Docs Locally
+## 本地构建文档 | Build Docs Locally
 
 ```bash
 python3 -m venv .venv
@@ -45,14 +67,14 @@ pip install -r docs/requirements.txt
 sphinx-build -b html docs docs/_build/html
 ```
 
-Open `docs/_build/html/index.html` in browser after build succeeds.
+构建成功后打开 `docs/_build/html/index.html`。  
+Open `docs/_build/html/index.html` after build succeeds.
 
-## Deploy to Read the Docs
+## 部署到 Read the Docs | Deploy to Read the Docs
 
 1. Push this repository to GitHub.
 2. Import the repository at <https://app.readthedocs.org/>.
-3. Read the Docs will auto-detect `.readthedocs.yaml` and build the docs.
-4. Optional: set custom domain in RTD project settings.
+3. Read the Docs auto-detects `.readthedocs.yaml` and builds docs.
 
 ## Citation
 
